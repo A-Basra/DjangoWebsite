@@ -1,0 +1,12 @@
+/* Add styles for the canvas element */
+canvas#constellation {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+/* Add styles for the stars */
+canvas#constellation .star {
+    fill: white;
+    stroke: white;
+}
