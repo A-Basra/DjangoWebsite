@@ -237,6 +237,13 @@ canvas {
     background-clip: content-box;
     background: rgba(190, 193, 197, 0.5);
     cursor: grab;
+
+    @keyframes test {
+        from {
+            top: 25vh;
+            left: 50vw;
+        }
+    }
 }
 
 .image {
