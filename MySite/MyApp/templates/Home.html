@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title> 
+  <link rel="stylesheet" href="{% static '/css/Home.css'%}">
+</head>
+<body>
+
+<!-- particles.js container -->
+<div id="particles-js">
+  <a href="{% url 'Home' %}" ><img class="image" src="{% static 'assets/Icon.png'%}" alt="Logo"/></a>
+  <div id="Menu" class="list">
+    <a href="{% url 'Home' %}" class="base-button">Home</a>
+    <a href="{% url 'Portfolio' %}" class="base-button">Portfolio</a>
+    <a href="{% url 'About' %}" class="base-button">About</a>    
+    <a href="{% url 'Contact' %}" class="base-button">Contact</a> 
+  </div> 
+</div>
+
+<!-- scripts -->
+<script src="{% static '/js/web.js'%}"></script>
+<script src="{% static '/js/app.js'%}"></script>
+
+</body>
+</html>

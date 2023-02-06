@@ -190,46 +190,6 @@ canvas {
     vertical-align: bottom;
 }
 
-
-/* ---- stats.js ---- */
-
-.count-particles {
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #bec1c5;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-}
-
-.js-count-particles {
-    font-size: 20em;
-}
-
-#stats,
-.count-particles {
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-.count-particles {
-    border-radius: 0 0 3px 3px;
-}
-
-
 /* ---- particles.js container ---- */
 
 #particles-js {
@@ -242,56 +202,41 @@ canvas {
     background-repeat: no-repeat;
 }
 
-.menu {
-    position: relative;
-
+.list {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
 }
 
 .base-button {
-    position: fixed;
     display: block;
     background: rgba(190, 193, 197, 0.1);
+    background-clip: padding-box;
     text-align: center;
     color: #bec1c5;
-    top: 50vh;
-    left: 50vw;
-    width: 100px;
-    height: 20px;
-    background-clip: border-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
     border: none;
-    border-radius: 5px;
-    margin-left: -50px;
-    margin-top: -10px;
+    width: 10vw;
+    height: 3vh;
+    background-clip: text;
+    padding: 5px;
     font-family: Drexs;
+    margin-left: -5vw;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px
 }
 
 .base-button:hover {
+    background-clip: content-box;
     background: rgba(190, 193, 197, 0.25);
 }
 
 .base-button:active {
+    background-clip: content-box;
     background: rgba(190, 193, 197, 0.5);
-}
-
-.links {
-    margin: auto;
-    background: rgba(190, 193, 197, 0.1);
-    background-clip: text;
-    text-align: center;
-    vertical-align: middle;
-    width: 100px;
-    height: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: fixed;
-    top: 50vh;
-    left: 50vw;
-    text-decoration: none;
-    color: #bec1c5;
-    margin-left: -50px;
-
+    cursor: grab;
 }
 
 .image {
@@ -304,4 +249,5 @@ canvas {
     height: 100px;
     margin-left: -50px;
     margin-top: -50px;
+    opacity: 0.5;
 }

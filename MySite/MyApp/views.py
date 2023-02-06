@@ -1,4 +1,13 @@
 from django.shortcuts import render
 
-def web(request):
-    return render(request, 'web.html')
+def Home(request):
+    return render(request, 'Home.html')
+
+def Portfolio(request):
+    return render(request, 'Portfolio.html')
+
+def About(request):
+    return render(request, 'About.html')
+
+def Contact(request):
+    return render(request, 'Contact.html')
