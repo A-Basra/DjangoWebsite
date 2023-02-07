@@ -217,9 +217,7 @@ canvas {
     border: none;
     width: 10vw;
     height: 3vh;
-    background-clip: text;
     padding: 5px;
-    font-family: Drexs;
     margin-left: -5vw;
     margin-top: -5px;
     margin-bottom: 10px;

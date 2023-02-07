@@ -176,7 +176,7 @@ canvas {
     background-repeat: no-repeat;
 }
 
-.list {
+.menu {
     position: absolute;
     top: 5vh;
     left: 0vw;
@@ -196,9 +196,7 @@ canvas {
     border: none;
     width: 7.5vw;
     height: 3vh;
-    background-clip: text;
     padding: 5px;
-    font-family: Drexs;
     margin-top: -5px;
     margin-bottom: 10px;
     cursor: pointer;
