@@ -8,7 +8,14 @@ div,
 span,
 object,
 iframe,
-h1,
+h1 {
+    font-family: Adoring;
+    font-size: 25px;
+    text-align: center;
+    color: #bec1c5;
+    left: 50vw;
+}
+
 h2,
 h3,
 h4,
@@ -18,40 +25,7 @@ p,
 blockquote,
 pre,
 abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
+
 th,
 td,
 article,
@@ -204,10 +178,15 @@ canvas {
 
 .list {
     position: absolute;
-    top: 40vh;
-    left: 50vw;
+    top: 5vh;
+    left: 0vw;
 }
 
+.navbar {
+    position: absolute;
+    top: 20vh;
+    left: 1vw;
+}
 .base-button {
     display: block;
     background: rgba(190, 193, 197, 0.1);
@@ -215,18 +194,18 @@ canvas {
     text-align: center;
     color: #bec1c5;
     border: none;
-    width: 10vw;
+    width: 7.5vw;
     height: 3vh;
     background-clip: text;
     padding: 5px;
     font-family: Drexs;
-    margin-left: -5vw;
     margin-top: -5px;
     margin-bottom: 10px;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 75%;
     font-family: Adoring;
+    text-decoration: none;
 }
 
 .base-button:hover {
@@ -244,14 +223,26 @@ canvas {
     display: block;
     position: absolute;
     margin: auto;
+    top: 7.5vh;
+    left: 5vw;
     width: 7.5vw;
-    margin-left: -3.75vw;
+    margin-left: -7.5vh;
     margin-top: -3.75vh;
     opacity: 0.75;
 }
 
-.logopos {
+.bg {
     position: absolute;
-    top: 25vh;
+    width: 0vw;
+    height: 100vh;
     left: 50vw;
+    margin-left: -40vw;
+    background: rgba(190, 193, 197, 0.25);
+}
+
+.signIn {
+    margin-top: 55vh;
+    background: #bec1c5;
+    height: 5vh;
+    color: #b61924;
 }

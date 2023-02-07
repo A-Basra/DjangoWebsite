@@ -12,10 +12,11 @@
 
 <!-- particles.js container -->
 <div id="particles-js">
-  <div id='Logo'><a href="{% url 'Home' %}" ><img class="image" src="{% static 'assets/Icon.png'%}" alt="Logo"/></a></div>
+  <div class="singIn"></div>
+  <div id='Logo' class="logopos"><a href="{% url 'Home' %}" ><img class="image" src="{% static 'assets/Icon.png'%}" alt="Logo"/></a></div>
   <div id="Menu" class="list">
-    <a href="{% url 'Home' %}"><button class="base-button" onclick="move()">Home</button></a>
-    <a href="{% url 'Portfolio' %}" class="base-button">Portfolio</a>
+    <a href="#" class="base-button" onclick='move()'>Home</a>
+    <a onclick='move()' href="{% url 'Portfolio' %}" class="base-button">Portfolio</a>
     <a href="{% url 'About' %}" class="base-button">About</a>    
     <a href="{% url 'Contact' %}" class="base-button">Contact</a> 
   </div> 

@@ -5,21 +5,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Portfolio</title> 
-  <link rel="stylesheet" href="{% static '/css/Home.css'%}">
+  <title>Contact</title> 
+  <link rel="stylesheet" href="{% static '/css/base.css'%}">
 </head>
-<body>
+<body onload="expandBg()">
 
 <!-- particles.js container -->
 <div id="particles-js">
   <a href="{% url 'Home' %}" ><img class="image" src="{% static 'assets/Icon.png'%}" alt="Logo"/></a>
-  <div id="Menu" class="list">
+  <div id="navbar" class="navbar">
+    <a href="{% url 'Home' %}" class="base-button" >Home</a>
+    <a  href="{% url 'Portfolio' %}" class="base-button">Portfolio</a>
+    <a href="{% url 'About' %}" class="base-button" >About</a>
+    <a  href="{% url 'Contact' %}" class="base-button">Contact</a>
+  </div>
+  <div id=background class="bg">
+    <h1>Contact</h1>
   </div>
 </div>
 
 <!-- scripts -->
 <script src="{% static '/js/web.js'%}"></script>
 <script src="{% static '/js/app.js'%}"></script>
+<script src="{% static '/js/animate.js'%}"></script>
+
 
 </body>
 </html>
