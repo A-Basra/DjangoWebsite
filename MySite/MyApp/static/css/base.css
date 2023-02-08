@@ -176,15 +176,9 @@ canvas {
     background-repeat: no-repeat;
 }
 
-.menu {
-    position: absolute;
-    top: 5vh;
-    left: 0vw;
-}
-
 .navbar {
     position: absolute;
-    top: 20vh;
+    top: 25vh;
     left: 1vw;
 }
 
@@ -198,12 +192,11 @@ canvas {
     width: 7.5vw;
     height: 3vh;
     padding: 5px;
-    margin-left: 3.75px;
     margin-top: -5px;
     margin-bottom: 10px;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: Adoring;
     text-decoration: none;
     filter: drop-shadow(-10px 10px 5px rgb(0, 0, 0));
@@ -225,11 +218,13 @@ canvas {
     position: absolute;
     margin: auto;
     top: 7.5vh;
-    left: 5vw;
+    left: 3vw;
     width: 7.5vw;
-    margin-left: -7.5vh;
+    margin-left: -3.75vh;
     margin-top: -3.75vh;
     opacity: 0.75;
+    filter: drop-shadow(-10px 10px 10px rgb(0, 0, 0));
+
 }
 
 .bg {

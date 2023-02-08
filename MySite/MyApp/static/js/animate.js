@@ -1,4 +1,4 @@
-function move(redirect) {
+function animatefunc() {
     event.preventDefault()
     var logo = document.getElementById("Logo")
     var menu = document.getElementById("Menu")
@@ -7,24 +7,29 @@ function move(redirect) {
         { 'left': '50vw', 'top': '25vh' },
         { 'left': '5vw', 'top': '7.5vh' }
     ],
-        { duration: 1000 })
-
+        { duration: 500 })
 
     menu.animate([
-        { 'left': '50vw', 'top': '40vh', 'width': '10vw' },
-        { 'left': '1vw', 'top': '20vh', 'width': '7.5vw', 'margin-left': '0' }
+        { 'left': '50vw', 'top': '40vh' },
+        { 'left': '4.5vw', 'top': '25vh' }
     ],
-        { duration: 1000 })
-
+        { duration: 500 })
     logo.style.left = "5vw"
     logo.style.top = "7.5vh"
-    menu.style.left = '1vw'
-    menu.style.top = '20vh'
-    menu.style.width = '7.5vw'
-    menu.style.marginLeft = '0'
+    menu.style.left = '4.5vw'
+    menu.style.top = '25vh'
+    menu.style.marginLeft = '0vw'
 
 }
-
+function redirection(redirect) {
+    location.href = redirect
+}
+function move(redirect) {
+    animatefunc()
+    setTimeout(function () {
+        redirection(redirect)
+    }, 500)
+}
 
 expanded = false
 function expandBg() {

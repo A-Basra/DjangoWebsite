@@ -13,9 +13,9 @@
 <!-- particles.js container -->
 <div id="particles-js">
   <div class="singIn"></div>
-  <div id='Logo' class="logopos"><a href="{% url 'Home' %}" ><img class="image" src="{% static 'assets/Icon.png'%}" alt="Logo"/></a></div>
+  <div id='Logo' class="logopos"><a href="{% url 'Landing' %}" ><img class="image" src="{% static 'assets/Icon.png'%}" alt="Logo"/></a></div>
   <div id="Menu" class="list">
-    <a href="{% url 'Home' %}" class="base-button" onclick='move(this);return false'>Home</a>
+    <a href="{% url 'Home' %}" class="base-button" onclick='move(this)'>Home</a>
     <a href="{% url 'Portfolio' %}" class="base-button" onclick='move(this)'>Portfolio</a>
     <a href="{% url 'About' %}" class="base-button" onclick='move(this)'>About</a>    
     <a href="{% url 'Contact' %}" class="base-button" onclick='move(this)'>Contact</a> 
