@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+def Landing(request):
+    return render(request, 'Landing.html')
+
 def Home(request):
     return render(request, 'Home.html')
 

@@ -187,6 +187,7 @@ canvas {
     top: 20vh;
     left: 1vw;
 }
+
 .base-button {
     display: block;
     background: rgba(190, 193, 197, 0.1);
@@ -197,13 +198,15 @@ canvas {
     width: 7.5vw;
     height: 3vh;
     padding: 5px;
+    margin-left: 3.75px;
     margin-top: -5px;
     margin-bottom: 10px;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 75%;
+    font-size: 20px;
     font-family: Adoring;
     text-decoration: none;
+    filter: drop-shadow(-10px 10px 5px rgb(0, 0, 0));
 }
 
 .base-button:hover {
