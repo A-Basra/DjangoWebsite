@@ -1,33 +1,10 @@
-<!DOCTYPE html>
-
-{% load static %}
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Login</title> 
-  <link rel="stylesheet" href="{% static '/css/login.css'%}">
-</head>
-<body>
-
-<!-- particles.js container -->
-<div id="particles-js">
-  <div class ="loginBG">
-    <a href="{% url 'Landing' %}" ><img class="logo" src="{% static 'assets/Icon.png'%}" alt="Logo"/></a>
-    <form>
-      <label>Username<label>
-      <input></input>
-      <label>Password<label>
-      <input></input>
-    </form>
-    <button class="signInLogin base-button">Sign In</button>
-  </div>
-</div>
-
-<!-- scripts -->
-<script src="{% static '/js/web.js'%}"></script>
-<script src="{% static '/js/app.js'%}"></script>
-<script src="{% static '/js/animate.js'%}"></script>
-
-</body>
-</html>
+{% extends "baseform.html" %}
+{%block title%}Login{%endblock%}
+{%block content%}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <p>Not got an account? Sign up <a href="SignUp">here</a>!</p>
+  <button type='submit' class="signInLogin base-button">Sign In</button>
+</form>
+{%endblock%}

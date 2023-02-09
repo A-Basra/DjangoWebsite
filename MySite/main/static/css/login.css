@@ -202,44 +202,6 @@ canvas {
     background-repeat: no-repeat;
 }
 
-.list {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-}
-
-.base-button {
-    display: block;
-    background: rgba(190, 193, 197, 0.1);
-    background-clip: padding-box;
-    text-align: center;
-    color: #bec1c5;
-    border: none;
-    width: 7.5vw;
-    height: 3vh;
-    padding: 5px;
-    margin-left: -3.75vw;
-    margin-top: -5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 1.5vw;
-    font-family: Adoring;
-    top: 10%;
-    left: 50%;
-    filter: drop-shadow(-10px 10px 5px rgb(0, 0, 0));
-}
-
-.base-button:hover {
-    background-clip: content-box;
-    background: rgba(190, 193, 197, 0.25);
-}
-
-.base-button:active {
-    background-clip: content-box;
-    background: rgba(190, 193, 197, 0.5);
-    cursor: grab;
-}
 
 .logo {
     display: block;
@@ -269,34 +231,53 @@ canvas {
 .loginBG {
     position: fixed;
     background: rgba(190, 193, 197, 0.1);
-    width: 30%;
-    height: 50%;
-    margin-top: -12.5%;
-    margin-left: -15%;
+    width: 500px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -250px;
     top: 50%;
     left: 50%;
     border-radius: 15px;
 }
 
 form {
-    position: absolute;
-    top: 40%;
+    position: fixed;
+    top: 0%;
     left: 50%;
-    width: 100%;
-    margin-left: -25%;
+    width: 450px;
+    margin-left: -225px;
 }
 
 input {
     background-color: #bec1c5;
-    width: 50%;
-    border-radius: 10px;
-    display: block;
+    width: 350px;
+    margin-left: 50px;
+    border-radius: 5px;
     margin-bottom: 2%;
     left: 50%;
+    font-size: 15px;
+    height: 25px;
 }
 
 label {
     font-family: Adoring;
     font-size: 25px;
-    color: rgba(190, 193, 197, 1)
+    color: rgba(190, 193, 197, 1);
+    margin-left: 50px;
+    text-align: left;
+}
+
+p{
+    font-family: Adoring;
+    font-size: 20px;
+    color: rgba(190, 193, 197, 1);
+    text-align: center;
+
+
+}
+
+a{
+    font-family: Adoring;
+    font-size: 20px;
+    color: rgba(190, 193, 197, 0.5)
 }

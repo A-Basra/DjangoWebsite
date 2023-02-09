@@ -8,5 +8,5 @@ urlpatterns = [
     path('Portfolio', views.Portfolio, name="Portfolio"),
     path('About', views.About, name="About"),
     path('Contact', views.About, name="Contact"),
-    path('SignIn', views.SignIn, name="SignIn")
+    path('SignUp', views.SignUp, name='SignUp')
 ]

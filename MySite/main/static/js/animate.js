@@ -8,16 +8,17 @@ function animatefunc() {
         { 'left': '5%', 'top': '10%' }
     ],
         { duration: 500 })
-
     menu.animate([
-        { 'left': '50%', 'top': '45%' },
-        { 'left': '5%', 'top': '30%' }
+        { 'position':'abolsute','left': '50%', 'top': '45%', 'width': '10%' },
+        { 'position': 'fixed','left': '5%', 'top': '30%', 'width': '7.5%'}
     ],
         { duration: 500 })
+    menu.style.position = 'fixed'
     logo.style.left = "5%"
     logo.style.top = "10%"
     menu.style.left = '5%'
     menu.style.top = '30%'
+    menu.style.width = '7.5%'
 
 }
 function redirection(redirect) {

@@ -203,13 +203,13 @@ canvas {
 }
 
 .list {
-    position: fixed;
-    top: 45%;
+    position: absolute;
+    top: 35%;
     left: 50%;
-    width: 7.5%;
-    height: 3%;
-    margin-top: -3.75%;
-    margin-left: -3.75%;
+    width: 200px;
+    height: 50px;
+    margin-left: -100px;
+    margin-top: -25px;
 }
 
 .base-button {
@@ -223,7 +223,7 @@ canvas {
     margin-bottom: 10px;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 1.5vw;
+    font-size: 25px;
     font-family: Adoring;
     top: 10%;
     left: 50%;
@@ -245,46 +245,45 @@ canvas {
     display: block;
     position: absolute;
     margin: auto;
-    width: 7.5%;
-    margin-left: -3.75%;
-    margin-top: -3.75%;
+    width: 150px;
+    margin-left: -75px;
+    margin-top: -75px;
     opacity: 0.75;
     filter: drop-shadow(-10px 10px 10px rgb(0, 0, 0));
-    top: 27.5%;
+    top: 22.5%;
     left: 50%;
 }
 
-
-.signInLanding {
+.signIn {
     position: absolute;
-    top: 90%;
-    background: #bec1c5;
-    height: 3%;
-    color: #202124;
-    opacity: 0.5;
+    width: 200px;
+    top: 375px;
     left: 50%;
-}
-
-.signInLogin {
-    position: absolute;
-    top: 95%;
-    left: 50%;
+    margin-left: -100px;
     background: #bec1c5;
-    height: 50%;
-    width: 20%;
-    margin-left: -10%;
-    margin-top: -3.75%;
+    height: 25px;
+    margin-top: -12.5px;
     color: #202124;
+    display: block;
+    background-clip: padding-box;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: Adoring;
+    text-decoration: none;
+    /* filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.25)); */
 }
 
 .menuBG {
     position: absolute;
     background: rgba(190, 193, 197, 0.1);
-    width: 20%;
-    height: 60%;
-    margin-top: -25%;
-    margin-left: -10%;
-    top: 72.5%;
+    width: 450px;
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -225px;
+    top: 50%;
     left: 50%;
     border-radius: 15px;
 }
